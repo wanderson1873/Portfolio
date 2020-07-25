@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>classes - Wanderson</title>
+{% extends "layout.html" %}
 
-</head>
-<body>
-    <header>
-        <div class="link">
-            <a href="index.html">Sobre</a>
-            <a href="classes.html">Aula</a>
-        </div>
-    </header>
+{% block head %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Portfólio - Wanderson</title>
+{% endblock head %}
+
+{% block content %}
 
     <div id="wrapper">
-            <h1>Aulas</h1>
+        <h1>Aulas</h1>
     </div>
 
     <section class="cards">
@@ -99,7 +89,7 @@
                 <p class="card__prince">FREE</p>
             </div>
         </div>
-        
+
     </section>
 
     <div class="modal-overley">
@@ -109,12 +99,11 @@
             </a>
             <div class="modal-content">
                 <!-- video aqui -->
-                <iframe src="" ></iframe>
+                <iframe src=""></iframe>
             </div>
         </div>
     </div>
-   
- 
+
     <script src="scripts.js"></script>
-</body>
-</html>
+
+{% endblock %}
