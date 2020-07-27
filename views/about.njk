@@ -7,18 +7,18 @@
 {% block content %}
 
     <div id="wrapper">
-        <img src="https://avatars2.githubusercontent.com/u/65118827?s=460&u=7c508a738d926eb0f20fdef0502bd2aab874f51c&v=4" alt="Wanderson Oliveira">
-        <h1>Wanderson Oliveira</h1>
-        <h2>junior Web Developer</h2>
-        <p>Estudante da <a href="https://origamid.com" target="_black">Origamid</a> e da <a href="https://rockseat.com.br" target="_black">Rockseat</a>. Futuro Desenvolvedor Full-Steack.</p>
+        <img src="{{ about.avatar_url }}" alt="imagem de {{ about.name }}">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.role }}</h2>
+        <p>{{ about.description }}</p>
     </div>
 
     <footer>
         <div class="link">
-            <a href="https://github.com/wanderson1873" target="_blanck">GitHub</a>
-            <a href="https://twitter.com/wanderson1873" target="_blanck">Twitter</a>
-            <a href="https://www.linkedin.com/in/wanderson1873/" target="_blanck">Linkedin</a>
+            {% for item in about.links %}
+                <a href="{{ item.url }}" target="_blanck">{{ item.name }}</a>
+            {% endfor %}
         </div>
     </footer>
-    
+
 {% endblock content %}

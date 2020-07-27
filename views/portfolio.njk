@@ -12,84 +12,20 @@
     </div>
 
     <section class="cards">
-        <div class="card" id="BXqUH86F-kA">
-            <div class="card__img-container">
-                <img src="https://img.youtube.com/vi/BXqUH86F-kA/mqdefault.jpg" alt="Curso JavaScript">
+        {% for item in itens %}
+            <div class="card" id="{{ item.id }}">
+                <div class="card__img-container">
+                    <img src="https://img.youtube.com/vi/{{ item.id }}/mqdefault.jpg" alt="image de {{ item.title }}">
+                </div>
+                <div class="card__content">
+                    <p>{{ item.title }}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{ item.duration }}</p>
+                    <p class="card__prince">{{ item.price }}</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p>Curso de JavaScript</p>
-            </div>
-            <div class="card__info">
-                <p>33 aulas</p>
-                <p class="card__prince">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="F7KzJ7e6EAc">
-            <div class="card__img-container">
-                <img src="https://img.youtube.com/vi/F7KzJ7e6EAc/maxresdefault.jpg" alt="Curso PHP">
-            </div>
-            <div class="card__content">
-                <p>Curso PHP Iniciante</p>
-            </div>
-            <div class="card__info">
-                <p>24 aulas</p>
-                <p class="card__prince">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="zpK_MqEMgu4">
-            <div class="card__img-container">
-                <img src="https://img.youtube.com/vi/zpK_MqEMgu4/maxresdefault.jpg" alt="Curso Hadware">
-            </div>
-            <div class="card__content">
-                <p>Curso de Hadware</p>
-            </div>
-            <div class="card__info">
-                <p>34 aulas</p>
-                <p class="card__prince">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="sTX0UEplF54">
-            <div class="card__img-container">
-                <img src="https://img.youtube.com/vi/sTX0UEplF54/mqdefault.jpg" alt="Curso de Java">
-            </div>
-            <div class="card__content">
-                <p>Curso de Java</p>
-            </div>
-            <div class="card__info">
-                <p>32 aulas</p>
-                <p class="card__prince">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="Ofktsne-utM">
-            <div class="card__img-container">
-                <img src="https://img.youtube.com/vi/Ofktsne-utM/mqdefault.jpg" alt="Curso de Mysql">
-            </div>
-            <div class="card__content">
-                <p>Curso de Mysql</p>
-            </div>
-            <div class="card__info">
-                <p>19 aulas</p>
-                <p class="card__prince">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="xEKo29OWILE">
-            <div class="card__img-container">
-                <img src="https://img.youtube.com/vi/xEKo29OWILE/mqdefault.jpg" alt="Curso de Git e GitHub">
-            </div>
-            <div class="card__content">
-                <p>Curso de Git e GitHub</p>
-            </div>
-            <div class="card__info">
-                <p>13 aulas</p>
-                <p class="card__prince">FREE</p>
-            </div>
-        </div>
-
+        {% endfor %}
     </section>
 
     <div class="modal-overley">

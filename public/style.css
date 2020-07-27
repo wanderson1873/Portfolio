@@ -71,6 +71,11 @@ header {
     line-height: 34px;
 }
 
+#wrapper p a {
+    color: #fff;
+    font-style: italic;
+}
+
 footer a {
     border-bottom: 1px solid var(--color-green);
 }
@@ -86,7 +91,9 @@ footer a {
 }
 
 .card {
+    display: grid;
     background: var(--color-rocket);
+    cursor: pointer;
 }
 
 .card__img-container img {
@@ -101,6 +108,7 @@ footer a {
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__prince {
