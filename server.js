@@ -10,10 +10,11 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
-// Rota
+// Rota raiz
 server.get("/", function(req, res) {
     const about = {
         avatar_url: 'https://avatars2.githubusercontent.com/u/65118827?s=460&u=7c508a738d926eb0f20fdef0502bd2aab874f51c&v=4',
@@ -30,9 +31,16 @@ server.get("/", function(req, res) {
     return res.render("about", { about })
 })
 
-// Rota
+// Rota page portfolio
 server.get("/portfolio", function(req, res) {
     return res.render("portfolio", { itens: videos })
+})
+
+// Rota para mostrar os videos
+server.get("/video", function(req, res) {
+    const id = req.query.id
+
+    res.send(id)
 })
 
 // starting server

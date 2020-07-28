@@ -3,7 +3,8 @@ module.exports = [
         id: "BXqUH86F-kA",
         title: "Curso de JavaScript",
         duration: "33 aulas",
-        price: "FREE"
+        price: "FREE",
+        featured: true
     },
     {
         id: "F7KzJ7e6EAc",
@@ -21,7 +22,8 @@ module.exports = [
         id: "sTX0UEplF54",
         title: "Curso de Java",
         duration: "32 aulas",
-        price: "FREE"
+        price: "FREE",
+        featured: true
     },
     {
         id: "Ofktsne-utM",
@@ -33,6 +35,7 @@ module.exports = [
         id: "xEKo29OWILE",
         title: "Curso de Git e GitHub",
         duration: "13 aulas",
-        price: "FREE"
+        price: "FREE",
+        featured: true
     }
 ]
