@@ -40,7 +40,15 @@ server.get("/portfolio", function(req, res) {
 server.get("/video", function(req, res) {
     const id = req.query.id
 
-    res.send(id)
+    const video = videos.find(function(video){
+        return video.id == id
+    })
+
+    if(!video){
+        res.send("Video not foud!")
+    }
+
+    return res.render("video", { item: video })
 })
 
 // starting server
