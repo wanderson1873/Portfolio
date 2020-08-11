@@ -1,6 +1,6 @@
 module.exports = [
     {
-        id: "BXqUH86F-kA",
+        id: "vfynv3lv09",
         title: "Curso de JavaScript",
         duration: "33 aulas",
         price: "FREE",
