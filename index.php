@@ -14,8 +14,20 @@
     
     <main>
     <img src="" alt="">
-        <h1>Wanderon <span>Oliveira</span></h1>
+        <h1>Wanderson <span>Oliveira</span></h1>
         <h2>Junior Web Developer</h2>
     </main>
+
+    <section>
+        <div class="contato"></div>
+        <div class="link"></div>
+        <div class="idioma"></div>
+    </section>
+
+    <section>
+        <div class="about"></div>
+        <div class="education"></div>
+        <div class="projects"></div>
+    </section>
 </body>
 </html>
